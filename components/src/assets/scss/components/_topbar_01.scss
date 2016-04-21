@@ -1,0 +1,47 @@
+// .menu-icon.dark.raimbow{
+//     top: -3px;
+//     width: 40px;
+//     margin-right: 20px;
+//     &::after{
+//         height: 5px;
+//         background: blue;
+//         box-shadow: 0 8px 0 red, 0 16px 0 green;
+//     }
+// }
+
+// .js-drilldown-back{
+//     a{
+//         content: "Hola";
+//     }
+    
+// }
+// .top-bar-left{
+//     ul{
+//         background: tomato;
+//         li{
+//             width: 1%;
+//         }
+//     }
+// }
+
+li ul li:first-child{
+    border-top: 1px solid lightgray;
+}
+
+.menu{
+    
+    li{
+        //background: tomato;
+        a{
+            color: black;
+        }
+    }
+    a{
+        &:focus{
+            // outline-color: red;
+            // outline-style: auto;
+            // outline-width: 10px;
+            outline: none;
+        }
+    }
+}
