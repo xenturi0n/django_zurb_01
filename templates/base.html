@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            {% block page-title %}
+            {% endblock page-title%}
+        </title>
+        {% block styles %}
+            <link rel="stylesheet" href="{% static 'assets/css/app.css' %}">
+        {% endblock styles %}
+    </head>
+    <body>
+        {% block content %}
+        {% endblock content %}
+        
+        {% block javascript %}
+            <script src="{% static 'assets/js/app.js' %}"></script>
+        {% endblock javascript %}
+    </body>
+</html>
